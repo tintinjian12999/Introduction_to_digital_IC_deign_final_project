@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Jan  5 01:00:15 2023
+# Process ID: 32412
+# Current directory: D:/NCKU/Introduction to DIC/final_project/final/final.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/NCKU/Introduction to DIC/final_project/final/final.sim/sim_1/behav/xsim/xsim.dir/testfixture_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/NCKU/Introduction to DIC/final_project/final/final.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/NCKU/Introduction to DIC/final_project/final/final.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/NCKU/Introduction -notrace
+couldn't read file "D:/NCKU/Introduction": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Jan  5 01:00:15 2023...

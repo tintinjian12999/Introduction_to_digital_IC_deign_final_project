@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Jan  5 03:03:07 2023
+# Process ID: 24404
+# Current directory: D:/NCKU/Introduction to DIC/final_project/final/final.runs/synth_1
+# Command line: vivado.exe -log testfixture.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testfixture.tcl
+# Log file: D:/NCKU/Introduction to DIC/final_project/final/final.runs/synth_1/testfixture.vds
+# Journal file: D:/NCKU/Introduction to DIC/final_project/final/final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/xlinx/Vivado/2021.1/scripts/Vivado_init.tcl'
+source testfixture.tcl -notrace
+create_project: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1137.660 ; gain = 0.000
+Command: synth_design -top testfixture -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 39064
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1207.051 ; gain = 69.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'testfixture' [D:/NCKU/Introduction to DIC/final_project/testfixture.v:8]
+INFO: [Synth 8-3876] $readmem data file 'file.txt' is read successfully [D:/NCKU/Introduction to DIC/final_project/testfixture.v:32]
+INFO: [Synth 8-3876] $readmem data file 'golden.txt' is read successfully [D:/NCKU/Introduction to DIC/final_project/testfixture.v:33]
+WARNING: [Synth 8-6896] event control except as first statement of always block inside initial block, initial block items will be ignored [D:/NCKU/Introduction to DIC/final_project/testfixture.v:42]
+INFO: [Synth 8-251] -----------   Oops! There is something wrong with your code! It can't stop.   ------------ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:118]
+INFO: [Synth 8-251] -------------------   There are 1024 errors   ------------------- [D:/NCKU/Introduction to DIC/final_project/testfixture.v:119]
+INFO: [Synth 8-6157] synthesizing module 'SEDE' [D:/NCKU/Introduction to DIC/final_project/SEDE.v:1]
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "data_line_1_reg" dissolved into registers
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "data_line_2_reg" dissolved into registers
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "data_line_3_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'SEDE' (1#1) [D:/NCKU/Introduction to DIC/final_project/SEDE.v:1]
+WARNING: [Synth 8-85] always block has no event control specified [D:/NCKU/Introduction to DIC/final_project/testfixture.v:29]
+WARNING: [Synth 8-6090] variable 'err' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NCKU/Introduction to DIC/final_project/testfixture.v:69]
+WARNING: [Synth 8-639] system function call 'time' not supported [D:/NCKU/Introduction to DIC/final_project/testfixture.v:70]
+WARNING: [Synth 8-639] system function call 'time' not supported [D:/NCKU/Introduction to DIC/final_project/testfixture.v:71]
+WARNING: [Synth 8-6090] variable 'check' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/NCKU/Introduction to DIC/final_project/testfixture.v:73]
+INFO: [Synth 8-251] -------------------   SEDE check successfully   ------------------- [D:/NCKU/Introduction to DIC/final_project/testfixture.v:90]
+INFO: [Synth 8-251]             $$               [D:/NCKU/Introduction to DIC/final_project/testfixture.v:91]
+INFO: [Synth 8-251]            $  $ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:92]
+INFO: [Synth 8-251]            $  $ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:93]
+INFO: [Synth 8-251]           $   $ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:94]
+INFO: [Synth 8-251]          $    $ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:95]
+INFO: [Synth 8-251] $$$$$$$$$     $$$$$$$$ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:96]
+INFO: [Synth 8-251] $$$$$$$              $ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:97]
+INFO: [Synth 8-251] $$$$$$$              $ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:98]
+INFO: [Synth 8-251] $$$$$$$              $ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:99]
+INFO: [Synth 8-251] $$$$$$$              $ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:100]
+INFO: [Synth 8-251] $$$$$$$              $ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:101]
+INFO: [Synth 8-251] $$$$$$$$$$$$         $$ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:102]
+INFO: [Synth 8-251] $$$$$      $$$$$$$$$$ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:103]
+INFO: [Synth 8-251] -----------   Oops! Something wrong with your code!   ------------ [D:/NCKU/Introduction to DIC/final_project/testfixture.v:107]
+INFO: [Synth 8-251] -------------------   There are x errors   ------------------- [D:/NCKU/Introduction to DIC/final_project/testfixture.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'testfixture' (2#1) [D:/NCKU/Introduction to DIC/final_project/testfixture.v:8]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:01:51 ; elapsed = 00:01:53 . Memory (MB): peak = 1318.445 ; gain = 180.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 1318.445 ; gain = 180.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 1318.445 ; gain = 180.785
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:20 ; elapsed = 00:02:10 . Memory (MB): peak = 1418.371 ; gain = 280.711
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 8     
+	                8 Bit    Registers := 100   
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 9     
+	   6 Input    8 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 81    
+	   6 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:47 ; elapsed = 00:04:39 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|testfixture | p_0_out    | 1024x8        | LUT            | 
+|testfixture | p_0_out    | 1024x8        | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:48 ; elapsed = 00:04:40 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:48 ; elapsed = 00:04:40 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:32 ; elapsed = 00:05:24 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:32 ; elapsed = 00:05:24 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:32 ; elapsed = 00:05:24 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:32 ; elapsed = 00:05:24 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:32 ; elapsed = 00:05:24 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:32 ; elapsed = 00:05:24 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:32 ; elapsed = 00:05:24 . Memory (MB): peak = 1744.758 ; gain = 607.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:32 ; elapsed = 00:05:24 . Memory (MB): peak = 1744.758 ; gain = 607.098
+Synthesis Optimization Complete : Time (s): cpu = 00:05:32 ; elapsed = 00:05:24 . Memory (MB): peak = 1744.758 ; gain = 607.098
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1744.758 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1851.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 2c65d1b0
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:06 ; elapsed = 00:05:58 . Memory (MB): peak = 1851.297 ; gain = 713.637
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint 'D:/NCKU/Introduction to DIC/final_project/final/final.runs/synth_1/testfixture.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testfixture_utilization_synth.rpt -pb testfixture_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  5 03:10:05 2023...
